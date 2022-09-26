@@ -17,9 +17,13 @@ class ClassComponent extends React.Component {
 
     updateData = () => {
         
-        let n = document.getElementById("bt1").value;
-        let d = document.getElementById("bt2").value;
-        let r = document.getElementById("bt3").value;
+        let e1 = document.getElementById("bt1");
+        let e2 = document.getElementById("bt2");
+        let e3 = document.getElementById("bt3");
+
+        let n = e1.value, d = e2.value, r = e3.value;
+
+        e1.value = ""; e2.value = ""; e3.value = "";
 
         this.setState(state => ({list : [...state.list, [n, d, r]]}));
 
