@@ -41,7 +41,11 @@ class ClassComponent extends React.Component {
                     <Enteries list={this.state.list} method={() => {
                         document.getElementById("first-page").style.display = "block";
                         document.getElementById("second-page").style.display = "none"; 
+<<<<<<< HEAD
                     }} />
+=======
+                    }}/>
+>>>>>>> 39065fd25654afab4ab56200c36cbb85a4818437
                 </div>
             );
         }

@@ -16,17 +16,24 @@ const Enteries  = (props) => {
             <div className='bottomBox'>
                 {ele}
             </div>
+<<<<<<< HEAD
             <button onClick= {props.method} id="fix-position">back</button>
+=======
+            <button onClick={props.method} id="fix-position">back</button>
+>>>>>>> 39065fd25654afab4ab56200c36cbb85a4818437
         </div>
     );
 
 }
 
+<<<<<<< HEAD
 //  function backToFirstPage() {
 //     document.getElementById("first-page").style.display = "block";
 //     document.getElementById("second-page").style.display = "none"; 
 // }
 
 
+=======
+>>>>>>> 39065fd25654afab4ab56200c36cbb85a4818437
 
 export default Enteries;
