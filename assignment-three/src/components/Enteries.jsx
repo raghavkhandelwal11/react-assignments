@@ -16,16 +16,17 @@ const Enteries  = (props) => {
             <div className='bottomBox'>
                 {ele}
             </div>
-            <button onClick={backToFirstPage} id="fix-position">back</button>
+            <button onClick= {props.method} id="fix-position">back</button>
         </div>
     );
 
 }
 
-function backToFirstPage() {
-    document.getElementById("first-page").style.display = "block";
-    document.getElementById("second-page").style.display = "none"; 
-}
+//  function backToFirstPage() {
+//     document.getElementById("first-page").style.display = "block";
+//     document.getElementById("second-page").style.display = "none"; 
+// }
+
 
 
 export default Enteries;
