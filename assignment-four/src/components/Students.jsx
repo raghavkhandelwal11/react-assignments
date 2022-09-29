@@ -78,7 +78,7 @@ class Students extends React.Component {
                             <h1 id="student-title">Student Details</h1>
                         </div>
                         <div>
-                            <Link to="add"><button onClick={this.show} id="student-add">Add new Student</button></Link> 
+                            <Link to="add"><button id="student-add">Add new Student</button></Link> 
                         </div>
                         {/* <button >show</button> */}
 

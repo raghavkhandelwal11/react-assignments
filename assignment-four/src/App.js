@@ -22,11 +22,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      students : [],
-      currentName: "",
-      currentAge: "",
-      currentCourse: "",
-      currentBatch: ""
+      students : []
     } 
   }
 
@@ -67,7 +63,7 @@ class App extends React.Component {
             <Route path="/" element={<Home />} />
             <Route path="/students" element={<Students stud={this.state.students}/>} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/students/add" element={<Add stud={this.state.students} method={this.updateStudents} current={this.currentStudent}/>}/>
+            <Route path="/students/add" element={<Add stud={this.state.students} method={this.updateStudent}/>}/>
             <Route path="students/edit" element={<Edit stud={this.state.students} edit={this.editStudent}/>} />
           </Routes>
         </BrowserRouter>
