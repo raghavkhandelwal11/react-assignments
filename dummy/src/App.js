@@ -1,34 +1,21 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ClassComponent from "./components/ClassComponent";
-// import "./components/style.css";
-import ClassComponent2 from "./components/ClassComponent2";
-
-
-class App extends React.Component{
-  constructor(){
-    super();
-    this.state = {
-        arr:[],
-    }
-} 
-  updateUsers=(updatedUsers)=>{
-    this.setState({arr:updatedUsers})
-  }
-  render(){
-  return ( 
-   <div className="App">
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Home from"./Component/home";
+import Student from "./Component/student";
+import Contactus from "./Component/contactus";
+//import "./Component/style.css";
+import Addnewstudent from "./Component/addnewstudent";
+function App() {
+  return(
+    <div>
     <BrowserRouter>
     <Routes>
-    <Route path='/' element = {<ClassComponent users = {this.state.arr} updateUsers = {this.updateUsers}/>}/>
-    <Route path='/classComponent2' element = {<ClassComponent2 users = {this.state.arr} />}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/contactus/" element={<Contactus />} />
+      <Route path="/student" element={<Student />}/>
+      <Route path="/student/addnewstudent" element={<Addnewstudent />}/>
     </Routes>
     </BrowserRouter>
-  
-   
     </div>
-  );
+  )
 }
-}
-
 export default App;
