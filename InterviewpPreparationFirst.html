@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        What is Virtual DOM?
+    </h1>
+    <p>In React virtual DOM is replica of a real DOM but it cannot directly manipulate the DOM content</p>
+    <p>The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
+
+        This approach enables the declarative API of React: You tell React what state you want the UI to be in, and it makes sure the DOM matches that state. This abstracts out the attribute manipulation, event handling, and manual DOM updating that you would otherwise have to use to build your app.</p>
+
+        <br> <br> <hr> <br><br>
+        <h2>What are Single Page Applications?</h2>
+        <p>A Single Page Application is a web application or website that interacts with the web browser by dynamically rewriting the current web page with new data from the web server, instead of the default method of the browser loading entire new pages.</p>
+        <br> <hr> <br>
+        <h1>Difference between Class and Functional Component</h1>
+        <table border="1px">
+            <tr>
+                <th>Functional Component</th>
+                <th>Class Component</th>
+            </tr>
+            <tr>
+                <td> functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
+                <td>A class component requires you to extend from React. Component and create a render function which returns a React element.</td>
+            </tr>
+            <tr>
+                <td>There is no render method used in functional components.</td>
+                <td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
+            </tr>
+            <tr>
+                <td>Functional component run from top to bottom and once the function is returned it cant be kept alive.</td>
+                <td>Class component is instantiated and different life cycle method is kept alive and being run and invoked depending on phase of class component.</td>
+            </tr>
+            <tr>
+                <td>Also known as Stateless components as they simply accept data and display them in some form, that they are mainly responsible for rendering UI.</td>
+                <td>Also known as Stateful components because they implement logic and state.</td>
+            </tr>
+
+        </table>
+
+        <br> <hr> <br>
+        <h1>What do you mean by state and its use in react?</h1>
+        <p>The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component. In other words, the State of a component is an object that holds some information that may change over the lifetime of the component</p>
+
+        <br> <hr> <br>
+
+        <h1>What is JSX and why do we use it instead of JS?</h1>
+        <p>
+            JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX converts HTML tags into react elements. You are not required to use JSX, but JSX makes it easier to write React applications.
+        </p>
+
+        <br> <hr> <br>
+
+        <h1>What is Package.json?</h1>
+        <p>The package. json file is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm uses to install dependencies, run scripts, and identify the entry point to our package.
+        </p>
+</body>
+</html>
