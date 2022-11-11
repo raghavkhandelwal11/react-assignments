@@ -14,58 +14,31 @@ import Add from "./components/Add"
 
 import Edit from './components/Edit';
 
+import Store from './components/Redux/Store';
 
-import { useState } from 'react';
-
+import {Provider} from "react-redux";
 
 
 
 const App = () => {
 
-  let [students, editStudents] = useState([]);
-
-  const updateStudents = (s) => {
-      editStudents(students.append(s));
-  }
-
-  const editStudent = (n, a, c, b, ind) => {
-    let arr = students;
-
-    // arr[ind][0] = n;
-    // arr[ind][1] = a;
-    // arr[ind][2] = c;
-    // arr[ind][3] = b;
-
-    if(n != "") {
-      arr[ind][0] = n;
-    }
-    if(a != "") {
-      arr[ind][1] =  a;
-    }
-    if(c != "") {
-      arr[ind][2] =  c;
-    }
-    if(b != "") {
-      arr[ind][3] =  b;
-    }
-
-    editStudents(arr);
-  }
-
   
     return (
-      <div className="App">
+      
         <BrowserRouter>
           <Navbar></Navbar>
+          <div className="App">
+          <Provider store={Store}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/students" element={<Students stud={students}/>} />
+            <Route path="/students" element={<Students/>} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/students/add" element={<Add stud={students} method={updateStudents}/>}/>
-            <Route path="students/edit" element={<Edit stud={students} edit={editStudent}/>} />
+            <Route path="/students/add" element={<Add />}/>
+            <Route path="students/edit" element={<Edit />} />
           </Routes>
+          </Provider>
+          </div>
         </BrowserRouter>
-      </div>
     )
 
   
