@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What are different types of HTTP requests?</h1>
+
+    <p>HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. These are equivalent to the CRUD operations (create, read, update, and delete).</p>
+
+    <pre>
+        GET: GET request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.
+        
+        POST: POST request is used to send data (file, form data, etc.) to the server. On successful creation, it returns an HTTP status code of 201.
+        
+        PUT: A PUT request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload. If there are no resources that match the request, it will generate one.
+
+        PATCH: PATCH is similar to PUT request, but the only difference is, it modifies a part of the data. It will only replace the content that you want to update.
+
+        DELETE: A DELETE request is used to delete the data on the server at a specified location.
+    </pre>
+
+
+    <hr>
+
+    <h1>Explain the concept of middleware in Node.js</h1>
+
+
+    <p>Middleware comes in the middle of the request and response cycle of the node.js execution. It also provides access to many functions like request and response objects with the Next function of the cycle.</p>
+
+    <ul>
+        <li>Making quick changes to the request and response objects</li>
+        <li>Calling the next middleware immediately as per the stack</li>
+        <li>Effectively executing any code</li>
+        <li>Automatically terminating the request-response cycle</li>
+
+    </ul>
+
+
+    <hr>
+
+    <h1>Explain CORS</h1> 
+
+    <p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.</p>
+
+
+    <hr>
+
+    <h1>What is ExpressJS and how it helps you to create a backend application</h1>
+
+    <p>Express is the most popular minimalistic framework. It is built upon the built-in module HTTP of NodeJS to facilitate the simple and easy interaction between frontend and backend logic through API, and also it enables us to organize our business logic in so much pretty manner. It is much flexible and we can use it for both the web and android. Also, it provides a very simple error handling procedure.</p>
+
+    <p>Express is the most popular minimalistic framework. It is built upon the built-in module HTTP of NodeJS to facilitate the simple and easy interaction between frontend and backend logic through API, and also it enables us to organize our business logic in so much pretty manner. It is much flexible and we can use it for both the web and android. Also, it provides a very simple error handling procedure.</p>
+
+    <hr>
+
+    <h1>Explain minimum 5 status codes that gets used in backend applications</h1>
+
+    <ul>
+        <li>200 Ok:
+            This response status code indicates that our request was successful. This is used mostly when we request for data from the server and it responds with the data. When you visit the link to a webpage, the browser sends a request to the server to give it the contents of that webpage</li>
+        <li>204 No Content:
+            This response code tells the client (in the case of a user agent) not to change the current document presented to the user. Header information might be updated, but no new content will be sent along.
+            
+            This response can be sent after a client makes a request updating a resources on the server and the server does not need to return any data since nothing new was created. The server must never return a response body when it sends a 204 - No Content status code.</li>
+        <li>404 Not Found:
+            If you have used the web frequently, you will definitely have run into this, especially 404 Page Not Found. In API terms, it means the resource you are trying to access was not found or the endpoint itself does not exist. A description of the error might accompany the error, but do not count on this in most cases.</li>
+        <li>403 Forbidden:
+            This error occurs when a client tries to access a resource it is not permitted to. This is not the same as 401 Unauthorized (just see them as fraternal twins 😃). An authenticated client can be Forbidden from accessing a resource just as an unauthenticated client can.</li>
+        <li>401 Unauthorized:
+            This response in simple terms means the client needs to authenticate itself before it completes the request. Authentication here could be providing access-token in the case of OAuth or Authorization token in the case of jwt based auth system or even API keys.</li>
+    </ul>
+
+    <hr>
+
+    <h1>Difference between HTTP and HTTPS</h1>
+
+    <p>HTTP stands for Hypertext Transfer Protocol, and it is a protocol or a prescribed order and syntax for presenting information used for transferring data over a network. Most information that is sent over the Internet, including website content and API calls, uses the HTTP protocol. There are two main kinds of HTTP messages: requests and responses.</p>
+
+    <p>The S in HTTPS stands for "secure." HTTPS uses TLS (or SSL) to encrypt HTTP requests and responses, so in the example above, instead of the text, an attacker would see a bunch of seemingly random characters.</p>
+
+    <hr>
+
+    <h1>What are JWT tokens?</h1>
+
+    <p>JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.</p>
+
+    <hr>
+    
+</body>
+</html>
