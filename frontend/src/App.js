@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from "./Componets/HomePage";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className=" flex px-4 py-2 bg-purple-900 text-white justify-between">
+        <img className="w-12 rounded-2xl" src="https://randomuser.me/api/portraits/men/75.jpg" alt="" />
+        <ul className=" px-10 flex space-x-7 justify-end ">
+          <li className="mx-2 pt-2 cursor-pointer">Home</li>
+          <li className="mx-2 pt-2 cursor-pointer">About</li>
+          <li className="mx-2 pt-2 cursor-pointer">Catalog</li>
+          <li className="mx-2 pt-2 cursor-pointer">Contact</li>
+        </ul>
+      </nav>
+
+
+      <HomePage />
+      
     </div>
   );
 }
