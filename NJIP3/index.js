@@ -4,6 +4,8 @@ const route2 = require("./routes/signup");
 const cors = require("cors");
 
 
+const port = process.env.POST || 3500;
+
 
 const signupRoute = route2.route1;
 
@@ -38,7 +40,7 @@ app.get("/page2", (req, res) => {
 
 
 
-app.listen(3500, () => {
+app.listen(port, () => {
     console.log("this is server running on port 3500");
 })
 
